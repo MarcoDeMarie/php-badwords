@@ -1,10 +1,8 @@
 <?php
 $name = $_GET['testo'];
-$parola = $_GET['parola'];
+$censura = $_GET['censura'];
+$testo_censurato= str_replace($censura, '***', $name);
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +14,10 @@ $parola = $_GET['parola'];
 </head>
 <body>
   <ul>
-    <li>Testo: <?php echo $testo?></li>
-    <li>Parola da censurare: <?php echo $parola?></li>
+    <li>Testo: <?php echo $name?></li>
+    <li>Parola da censurare: <?php echo $censura?></li>
+    <li>Testo censurato: <?php echo $testo_censurato?> </li>
   </ul>
-  
-  
 </body>
 
 </html>

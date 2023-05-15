@@ -13,7 +13,7 @@
 
   <div class="container">
 
-    <form action="dati-form.php" method="GET" ">
+    <form action="dati-form.php" method="GET">
       <input type="text" name="testo" class="testo" placeholder="Inserisci il testo" >
       <input type="text" name="censura" class="parola" placeholder="Inserisci la parola da censurare">
       <button type="submit">Submit</button>
