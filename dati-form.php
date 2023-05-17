@@ -14,8 +14,10 @@ $testo_censurato= str_replace($censura, '***', $name);
 </head>
 <body>
   <ul>
+    <h2>Il testo è lungo: <?php echo strlen($name) ?> caratteri</h2>
     <li>Testo: <?php echo $name?></li>
     <li>Parola da censurare: <?php echo $censura?></li>
+    <h2>Il testo è lungo: <?php echo strlen($testo_censurato) ?> caratteri</h2>
     <li>Testo censurato: <?php echo $testo_censurato?> </li>
   </ul>
 </body>
